@@ -155,7 +155,7 @@ The following properties can be configured:
 		<tr>
 			<td><code>daysofWeekToShowEachProject</code></td>
 			<td>Controls what days to show each project<br>
-				<br><b>Possible values:</b> <code>array matching each project index with what days it can show the items</code>
+				<br><b>Possible values:</b>Array with same number of items as the project list, each containing an array on what days to show each project Sunday:0, Monday:1...etc<code>[[1,2,3,4,5],[6,0]]</code>
 				<br><b>Default value:</b> <code>[[1,2,3,4,5],[6,0]]</code>
 			</td>
 		</tr>
