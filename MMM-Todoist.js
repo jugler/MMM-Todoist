@@ -241,10 +241,15 @@ Module.register("MMM-Todoist", {
 
 		//Filter the Todos by the Projects specified in the Config
 		tasks.items.forEach(function (item) {
+			var indexCounter=0;
 			self.config.projects.forEach(function (project) {
-				if (item.project_id == project) {
+				var todayDate = new Date();
+				var dayOfWeek = todayDate.getDay();
+				if (item.project_id == project 
+					&& self.config.daysofWeekToShowEachProject[indexCounter].includes(dayOfWeek)) {
 					items.push(item);
 				}
+				indexCounter=indexCounter+1;
 			});
 		});
 

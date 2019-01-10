@@ -152,6 +152,13 @@ The following properties can be configured:
 				<br><b>Default value:</b> <code>true</code>
 			</td>
 		</tr>
+		<tr>
+			<td><code>daysofWeekToShowEachProject</code></td>
+			<td>Controls what days to show each project<br>
+				<br><b>Possible values:</b> <code>array matching each project index with what days it can show the items</code>
+				<br><b>Default value:</b> <code>[[1,2,3,4,5],[6,0]]</code>
+			</td>
+		</tr>
 
 	</tbody>
 </table>
